@@ -1,0 +1,12 @@
+.App {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #292929;
+  text-transform: capitalize;
+  margin: 1rem 0;
+}

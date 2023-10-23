@@ -1,0 +1,66 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    background-color: #00000091;
+    position: fixed;
+    width: 100%;
+}
+.header a {
+    text-decoration: none;
+    color: #fff;
+}
+.header a:hover{
+    color: #ff0000;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.logo a {
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.menu a{
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.menu {
+    display: flex;
+    gap: 2rem;
+}
+
+
+.toggle-btn{
+    display: none;
+}
+
+.toggle-btn svg {
+    color: white;
+    font-size: 2rem;
+}
+
+@media (max-width:768px){
+    .menu{
+        display: none;
+    }
+    .toggle-btn {
+        display: block;
+        transition: 0.3s ease;
+    }
+    .mobile-menu {
+        position: absolute;
+        top: 95%;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        background: #00000078;
+        padding: 20px 0px;
+        transition: 0.3s ease;
+    }
+    .mobile-menu a{
+        font-size: 1.2rem;
+    }
+}
